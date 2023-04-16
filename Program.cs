@@ -13,7 +13,7 @@ else
 {
     Console.WriteLine("{0} i {1} są różne.", a, b);
 
-   
+
 }
 Console.WriteLine("------------------------------");
 
@@ -41,7 +41,7 @@ if (a > 0)
 {
     Console.WriteLine("{0} jest liczbą dodatnią", a);
 }
-else if (a < 0) 
+else if (a < 0)
 {
     Console.WriteLine("{0} jest liczbą ujemną", a);
 
@@ -74,11 +74,11 @@ string premier = ", Premierem";
 string senator = ", Senatorem";
 string prezydent = ", Prezydentem";
 Console.WriteLine("Masz {0} lat", a);
-if (a >= 21 && a<30)
+if (a >= 21 && a < 30)
 {
     Console.WriteLine("Możesz zostać {0}{1}", posel, premier);
 }
-else if (a>= 30 && a<35)
+else if (a >= 30 && a < 35)
 {
     Console.WriteLine("Możesz zostać {0}{1}{2}", posel, premier, senator);
 
@@ -115,7 +115,7 @@ else if (a >= 150 && a < 170)
 
 
 }
-else if (a >= 170 && a<200)
+else if (a >= 170 && a < 200)
 {
     Console.WriteLine("Jesteś {0}", wysoki);
 
@@ -134,8 +134,8 @@ else
 Console.WriteLine("------------------------------");
 
 Console.WriteLine("Zadanie 7:");
- a = 25;
- b = 63;
+a = 25;
+b = 63;
 int c = 79;
 
 if (c > b && c > a)
@@ -147,9 +147,9 @@ Console.WriteLine("------------------------------");
 Console.WriteLine("Zadanie 8:");
 int matematyka = 80;
 int fizyka = 71;
-int chemia  = 0;
+int chemia = 0;
 
-if ((matematyka > 70 && fizyka > 55 && chemia>45)||(matematyka+fizyka>150)||(matematyka+chemia > 150))
+if ((matematyka > 70 && fizyka > 55 && chemia > 45) || (matematyka + fizyka > 150) || (matematyka + chemia > 150))
 {
     Console.WriteLine(" Kandydat dopuszczony do rekrutacji");
 }
@@ -168,7 +168,7 @@ switch (a)
         Console.WriteLine("cholernie piździ");
         break;
 
-    case (<=10): 
+    case (<= 10):
         Console.WriteLine("zimno");
         break;
     case (<= 20):
@@ -183,7 +183,7 @@ switch (a)
     case (>= 40):
         Console.WriteLine("a weź wyprowadzam się na alaskę");
         break;
-    default: 
+    default:
         Console.WriteLine("zgubiłem termometr");
         break;
 
@@ -197,7 +197,7 @@ a = 40;
 b = 55;
 c = 65;
 
-if (a+b > c && c+a >b && c+b>a)
+if (a + b > c && c + a > b && c + b > a)
 {
     Console.WriteLine("Można zbudować trójkąt !");
 }
@@ -212,7 +212,7 @@ Console.WriteLine("Zadanie 11:");
 a = 3;
 switch (a)
 {
-    case  1:
+    case 1:
         Console.WriteLine("Niedostateczny");
         break;
 
@@ -276,7 +276,7 @@ Console.WriteLine("Zadanie 13:"); //brak zabezpieczeń przed wpisywaniem głupot
 string wybor;
 int d = 0;
 double wynik;
-int wynik2;
+//int wynik2;
 do
 {
     Console.WriteLine("Podaj pierwszą liczbę");
@@ -298,9 +298,9 @@ do
         switch (d)
         {
             case 1:
-              wynik = a + b;
-                wynik = Math.Round(wynik,0);
-                
+                wynik = a + b;
+                wynik = Math.Round(wynik, 0);
+
                 Console.WriteLine("Wynik działania {0}+{1} = {2}", a, b, wynik);
                 break;
             case 2:
@@ -312,7 +312,7 @@ do
                 wynik = a * b;
                 wynik = Math.Round(wynik, 0);
                 Console.WriteLine("Wynik działania {0}*{1} = {2}", a, b, wynik);
-                
+
                 break;
             case 4:
                 if (b != 0)
@@ -328,12 +328,13 @@ do
                 }
 
                 break;
-            default: Console.WriteLine("Coś poszło nie tak...");
+            default:
+                Console.WriteLine("Coś poszło nie tak...");
                 break;
         }
     }
 
-    } while (d != 5);
+} while (d != 5);
 
 
 
